@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# next-instagram
 
-## Getting Started
+## Descripcion
 
-First, run the development server:
+Este proyecto es una implementación de una página de perfil de una red social, inspirada en Instagram, utilizando Next.js. El objetivo es demostrar habilidades en el desarrollo frontend, específicamente con Next.js y varias librerías complementarias.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologias utilizadas y herramientas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Next js 14 ✅
+2. Tailwind Css ✅
+3. Zustand ✅
+4. mockapi ✅
+5. Sonne ✅
+6. React-dropzone ✅
+7. React-icons ✅
+8. Axios ✅
+9. Cloudinary ✅
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Instrucciones
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clona el repositorio.
+2. Navega al directorio del proyecto.
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+4. Ejecuta la aplicación:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+## Funcionalidades
 
-To learn more about Next.js, take a look at the following resources:
+- Perfil de Usuario: Visualización de la foto de perfil, nombre de usuario y biografía.
+- Edición de Perfil: Los usuarios pueden editar su nombre de usuario, correo electrónico, nombre completo y biografía.
+- Publicaciones: Visualización de publicaciones con imágenes, título, y número de likes.
+- Subida de Imágenes: Los usuarios pueden subir nuevas imágenes a través de una interfaz de arrastrar y soltar.
+- Notificaciones: Uso de Sonner para mostrar notificaciones de éxito y error.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Desafíos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Se utilizo cloudinary para poder subir la imagen a la nube y despues agregarla a la api.
+- Responsive para todos los dispositivos.
+- Al darle doble click a la imagen o darle click al corazon se suma la cantidad de likes que tiene la publicación
 
-## Deploy on Vercel
+## Diseño
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Basado en el diseño encontrado en https://www.figma.com/design/1nHyfjXTQFuk4UZMUbaGtt/Instagram-ui-(Community)?node-id=0-1&t=WtkwfbsToYypReT2-0.
+- Hice modificaciones buscando mis propios iconos , las vistas de mis publicaciones, configuración y biografia las diseñe yo.
