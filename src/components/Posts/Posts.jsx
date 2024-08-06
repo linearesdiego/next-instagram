@@ -5,8 +5,9 @@ import usePosts from '@/store/usePosts';
 import useUsers from '@/store/useUsers';
 //react
 import React, { useEffect, useState } from 'react';
+import { Loader, PostItem } from '..';
 //components
-import { Loader, PostItem } from '.';
+
 
 export const Posts = () => {
     const { posts, fetchPosts } = usePosts();
@@ -26,7 +27,7 @@ export const Posts = () => {
             <h1 className="text-white text-lg tracking-widest mb-2">Publicaciones</h1>
 
             {loading ? (
-                <div className="flex justify-center items-center h-[500px]">
+                <div className="flex justify-center items-center h-[500px]" >
                     {/* Loader */}
                     <Loader />
 

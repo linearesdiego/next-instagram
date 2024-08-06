@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 //store
 import usePosts from '@/store/usePosts';
 //components
-import { Avatar } from '.'
+import { Avatar } from '../Avatar/Avatar';
 //toast
 import { toast } from 'sonner';
 //image

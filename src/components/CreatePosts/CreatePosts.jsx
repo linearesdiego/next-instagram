@@ -4,8 +4,8 @@ import React, { useCallback, useState } from 'react';
 //store
 import usePosts from '@/store/usePosts';
 //componetns
-import ImageUploader from './ImageUploader';
-import { Button } from './Button';
+import ImageUploader from '../ImageUploader/ImageUploader';
+import { Button } from '../Button/Button';
 //react-dropzone
 import { useDropzone } from 'react-dropzone';
 //toast
@@ -37,7 +37,7 @@ export const CreatePosts = ({ onClose }) => {
     };
 
     return (
-        <section className='w-full '>
+        <section className='w-full' data-testid="dropzone">
             <div>
                 <ImageUploader
                     isDragActive={isDragActive}

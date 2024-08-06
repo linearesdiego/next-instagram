@@ -5,8 +5,8 @@ import useUsers from "@/store/useUsers";
 import { useState, useEffect } from "react";
 //toast
 import { toast } from "sonner";
+import { Button } from "..";
 //components
-import { Button } from "./Button";
 
 
 export const ProfileEdit = () => {
