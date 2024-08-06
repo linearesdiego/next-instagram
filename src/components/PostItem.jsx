@@ -1,8 +1,13 @@
 'use client'
+//react
 import React, { useState } from 'react'
-import { Avatar } from '.'
+//store
 import usePosts from '@/store/usePosts';
+//components
+import { Avatar } from '.'
+//toast
 import { toast } from 'sonner';
+//image
 import Image from 'next/image';
 
 export const PostItem = ({ item, users, isHome }) => {

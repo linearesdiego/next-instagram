@@ -1,4 +1,5 @@
 'use client'
+//components
 import { Avatar } from ".";
 
 export const Profile = ({ user, postOne }) => {

@@ -1,10 +1,15 @@
 'use client';
+//react
 import React, { useCallback, useState } from 'react';
+//store
 import usePosts from '@/store/usePosts';
+//componetns
 import ImageUploader from './ImageUploader';
-import { useDropzone } from 'react-dropzone';
-import { toast } from 'sonner';
 import { Button } from './Button';
+//react-dropzone
+import { useDropzone } from 'react-dropzone';
+//toast
+import { toast } from 'sonner';
 
 export const CreatePosts = ({ onClose }) => {
     const { upImageCloudinary, addPosts } = usePosts();

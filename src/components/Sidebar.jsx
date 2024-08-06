@@ -1,15 +1,14 @@
 'use client'
-
+//store
 import useUsers from "@/store/useUsers";
 import usePosts from "@/store/usePosts";
-
-import Image from "next/image";
+//next
+import Image from "next/image"
+//react
 import { useEffect, useState } from "react";
 
 //components
 import { Profile } from ".";
-
-
 
 //router
 import Link from "next/link";

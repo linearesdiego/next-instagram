@@ -1,9 +1,13 @@
 "use client";
-
+//store
 import useUsers from "@/store/useUsers";
+//react
 import { useState, useEffect } from "react";
+//toast
 import { toast } from "sonner";
+//components
 import { Button } from "./Button";
+
 
 export const ProfileEdit = () => {
     const { fetchUsersOne, usersOne, updateUser } = useUsers();
@@ -122,7 +126,12 @@ export const ProfileEdit = () => {
 
 
 
-                <Button type='submit' text="Guardar Cambios" otherProps='w-full' onClick={handleSubmit} />
+                <Button disabled={
+                    !user.username ||
+                    !user.email ||
+                    !user.fullname ||
+                    !user.bio
+                } type='submit' text="Guardar Cambios" otherProps='w-full' onClick={handleSubmit} />
             </form>
         </div>
     )

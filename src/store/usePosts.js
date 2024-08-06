@@ -2,8 +2,9 @@ import { create } from "zustand";
 import axios from "axios";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
-const CLOUDINARY_UPLOAD_PRESET = "jsyrtf9g";
-const CLOUDINARY_UPLOAD_URL = `https://api.cloudinary.com/v1_1/dfvxqb4my/image/upload`;
+const CLOUDINARY_UPLOAD_PRESET =
+  process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET;
+const CLOUDINARY_UPLOAD_URL = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_URL;
 const usePosts = create((set, get) => ({
   posts: [],
   postsOne: [],

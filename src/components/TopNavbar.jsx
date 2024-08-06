@@ -1,9 +1,14 @@
 
 'use client'
+
+//utils
 import { links } from '@/utils/Links';
+//next
 import Image from 'next/image';
 import Link from 'next/link';
+//react
 import React, { useState } from 'react';
+//icons
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 export const TopNavbar = () => {

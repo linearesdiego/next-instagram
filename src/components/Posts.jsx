@@ -1,7 +1,11 @@
 'use client';
+
+//store
 import usePosts from '@/store/usePosts';
 import useUsers from '@/store/useUsers';
+//react
 import React, { useEffect, useState } from 'react';
+//components
 import { Loader, PostItem } from '.';
 
 export const Posts = () => {

@@ -1,5 +1,5 @@
 'use client';
-
+//react-icons
 import { IoCloudUploadOutline } from 'react-icons/io5';
 
 const ImageUploader = ({ isDragActive, acceptedFiles, getRootProps, getInputProps }) => {

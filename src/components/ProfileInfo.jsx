@@ -1,6 +1,9 @@
 "use client";
+//componets
 import { Avatar } from "@/components";
+//store
 import useUsers from "@/store/useUsers";
+//react
 import { useEffect } from "react";
 
 export const ProfileInfo = () => {

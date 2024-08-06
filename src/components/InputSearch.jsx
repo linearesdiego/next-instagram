@@ -1,4 +1,4 @@
-import React from 'react'
+//react-icons
 import { CiSearch } from "react-icons/ci";
 
 export const InputSearch = () => {

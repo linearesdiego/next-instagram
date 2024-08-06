@@ -1,6 +1,8 @@
 "use client";
+//components
 import { CreatePosts, InputSearch, Modal, Posts } from "@/components";
 import useModal from "@/hooks/useModal";
+//react-icons
 import { CiCirclePlus } from "react-icons/ci";
 export const Home = () => {
     const { isVisible, openModal, closeModal } = useModal();
