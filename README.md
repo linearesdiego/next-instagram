@@ -15,6 +15,7 @@ Este proyecto es una implementación de una página de perfil de una red social,
 7. React-icons ✅
 8. Axios ✅
 9. Cloudinary ✅
+10. Jest ✅
 
 ## Instrucciones
 
@@ -25,8 +26,15 @@ Este proyecto es una implementación de una página de perfil de una red social,
    npm install
    ```
 4. Ejecuta la aplicación:
+
    ```bash
    npm run dev
+   ```
+
+5. Ejecutar Test
+
+   ```bash
+   npm run test
    ```
 
 ## Funcionalidades
@@ -42,6 +50,7 @@ Este proyecto es una implementación de una página de perfil de una red social,
 - Se utilizo cloudinary para poder subir la imagen a la nube y despues agregarla a la api.
 - Responsive para todos los dispositivos.
 - Al darle doble click a la imagen o darle click al corazon se suma la cantidad de likes que tiene la publicación
+- Realizar test de algunos de los componentes.
 
 ## Diseño
 
