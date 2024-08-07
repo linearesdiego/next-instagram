@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 //react-icons
 import { IoCloudUploadOutline } from 'react-icons/io5';
 
@@ -19,7 +20,7 @@ const ImageUploader = ({ isDragActive, acceptedFiles, getRootProps, getInputProp
             <div className="mt-10">
                 {
                     acceptedFiles[0] &&
-                    <img src={URL.createObjectURL(acceptedFiles[0])} alt="Preview" className='m-auto w-[350px] h-[350px] object-cover rounded-xl' />
+                    <Image src={URL.createObjectURL(acceptedFiles[0])} width={100} height={100} primity alt="Preview" className='m-auto w-[350px] h-[350px] object-cover rounded-xl' />
                 }
             </div>
         </div>

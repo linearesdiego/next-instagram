@@ -5,26 +5,25 @@ import { Loader, PostItem } from "@/components";
 import usePosts from "@/store/usePosts";
 import useUsers from "@/store/useUsers";
 //react
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 export const MyPosts = () => {
     const { postsOne, fetchPostsOne } = usePosts();
-    const { users } = useUsers();
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
+    const loadPosts = useCallback(async () => {
         setLoading(true);
-        const loadPosts = async () => {
-            await fetchPostsOne({ id: "1" });
+        await fetchPostsOne({ id: "1" });
+        setLoading(false);
+    }, [fetchPostsOne]);
 
-            setLoading(false);
-        };
-
+    useEffect(() => {
         loadPosts();
-    }, []);
+    }, [loadPosts]);
+
     return (
         <div className="mt-20 lg:mt-0">
-            <h1 className="text-white text-lg tracking-widest ">Mis Publicaciones</h1>
+            <h1 className="text-white text-lg tracking-widest">Mis Publicaciones</h1>
 
             {loading ? (
                 <div className="flex justify-center items-center h-[500px]">
@@ -42,5 +41,5 @@ export const MyPosts = () => {
                 <p className="text-white text-lg mt-5">No hay publicaciones</p>
             )}
         </div>
-    )
+    );
 }
