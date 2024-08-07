@@ -4,6 +4,7 @@ export * from "./CreatePosts/CreatePosts";
 export * from "./Home/Home";
 export { default as ImageUploader } from "./ImageUploader/ImageUploader";
 export * from "./InputSearch/InputSearch";
+export { default as RootLayout } from "./Layout/RootLayout";
 export * from "./Loader/Loader";
 export * from "./Modal/Modal";
 export * from "./MyPosts/MyPosts";

@@ -1,5 +1,9 @@
-import { ProfileInfo } from "@/components";
+import { ProfileInfo, RootLayout } from "@/components";
 
 export default function Profile() {
-  return <ProfileInfo />;
+  return (
+    <RootLayout>
+      <ProfileInfo />
+    </RootLayout>
+  );
 }

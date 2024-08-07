@@ -1,10 +1,10 @@
 //components
-import { Home as HomeInicio } from "@/components";
+import { Home as HomeInicio, RootLayout } from "@/components";
 
 export default function Home() {
   return (
-    <main>
+    <RootLayout>
       <HomeInicio />
-    </main>
+    </RootLayout>
   );
 }

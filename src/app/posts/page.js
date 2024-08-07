@@ -1,5 +1,9 @@
-import { MyPosts } from "@/components";
+import { MyPosts, RootLayout } from "@/components";
 
 export default function Posts() {
-  return <MyPosts />;
+  return (
+    <RootLayout>
+      <MyPosts />
+    </RootLayout>
+  );
 }

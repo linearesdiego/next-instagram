@@ -1,5 +1,9 @@
-import { ProfileEdit } from "@/components";
+import { ProfileEdit, RootLayout } from "@/components";
 
 export default function Config() {
-  return <ProfileEdit />;
+  return (
+    <RootLayout>
+      <ProfileEdit />
+    </RootLayout>
+  );
 }
