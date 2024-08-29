@@ -10,7 +10,7 @@ export const ProfileInfo = () => {
     const { fetchUsersOne, usersOne } = useUsers();
     useEffect(() => {
         fetchUsersOne({ id: 1 });
-    }, []);
+    }, [fetchUsersOne]);
     return (
         <div className="mt-20 lg:mt-0">
             <h1 className="text-white text-lg tracking-widest mb-10">

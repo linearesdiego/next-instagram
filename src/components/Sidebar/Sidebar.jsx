@@ -27,7 +27,7 @@ export const Sidebar = () => {
         fetchUsers();
         fetchPostsOne({ id: "1" });
     }
-        , []);
+        , [fetchUsers, fetchPostsOne]);
     return (
         <div className={`fixed inset-y-0 left-0 w-[420px] p-8 bg-grisOscuro text-white transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0`}>
             <div className="flex items-center justify-between">
