@@ -45,13 +45,15 @@ export const PostItem = ({ item, users, isHome }) => {
             handleLike();
         }
     };
-
     return (
         <div key={item.id} className="relative flex flex-col space-y-3 max-h-[700px] rounded-lg overflow-hidden">
-            <img
+            <Image
                 onDoubleClick={handleDoubleClick}
                 src={item.image}
                 alt={item.title}
+                width={500}
+                height={500}
+                priority
                 className={`w-full object-cover max-h-[500px] rounded-lg  ${!isHome ? 'my-3' : ''}`}
             />
             {
